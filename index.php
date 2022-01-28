@@ -1,7 +1,7 @@
 <?php
 
 $sessionId= $_POST["sessionId"];
-$serviceCode= $_POST['serviceCode'];
+$serviceCode= $_POST["serviceCode"];
 $PhoneNumber= $_POST["phoneNumber"];
 $text =$_POST["text"];
 
