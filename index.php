@@ -24,7 +24,7 @@ else if($text=="1*1"){
 } 
 else if($text=="1*2"){
     $balance="GHC 1000";
-    $response= "END youe balance, is" .$balance;
+    $response= "END your balance, is" .$balance;
 } 
 
 header('Content.type;text/plain');
