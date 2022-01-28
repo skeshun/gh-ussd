@@ -1,8 +1,14 @@
 <?php
+if (isset ($_POST['sessionId']));
+$sessionId=  $_POST["sessionId"];
 
-$sessionId= $_POST["sessionId"];
+if (isset ($_POST['serviceCode']));
 $serviceCode= $_POST["serviceCode"];
+
+if (isset ($_POST['phoneNumber']));
 $PhoneNumber= $_POST["phoneNumber"];
+
+if (isset ($_POST['text']));
 $text =$_POST["text"];
 
 if ($text==""){
