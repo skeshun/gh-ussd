@@ -1,15 +1,15 @@
 <?php
-if (isset ($_POST['sessionId']));
-$sessionId=  $_POST["sessionId"];
+if (isset ($_POST['submit'])) {
 
-if (isset ($_POST['serviceCode']));
-$serviceCode= $_POST["serviceCode"];
+    $sessionId= $_POST["sessionId"];
+    $serviceCode= $_POST['serviceCode'];
+    $PhoneNumber= $_POST["phoneNumber"];
+    $text =$_POST["text"];
+ 
+  }
+  $text=0;
+  $response="o";
 
-if (isset ($_POST['phoneNumber']));
-$PhoneNumber= $_POST["phoneNumber"];
-
-if (isset ($_POST['text']));
-$text =$_POST["text"];
 
 if ($text==""){
     $response= "CON check for \n";
@@ -30,7 +30,7 @@ else if($text=="1*1"){
 } 
 else if($text=="1*2"){
     $balance="GHC 1000";
-    $response= "END your balance, is" .$balance;
+    $response= "END youe balance is" .$balance;
 } 
 
 header('Content.type;text/plain');
